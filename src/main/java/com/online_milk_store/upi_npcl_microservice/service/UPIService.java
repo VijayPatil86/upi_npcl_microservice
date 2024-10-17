@@ -28,7 +28,7 @@ public class UPIService {
 		LOGGER.debug("UPIService.savePaymentRequest() --- START");
 		LOGGER.info("UPIService.savePaymentRequest() --- upiPaymentInfoBean: " + upiPaymentInfoBean);
 		UpiPaymentInfoEntity upiPaymentInfoEntityToSave = UpiPaymentInfoEntity.builder()
-				.upiId(upiPaymentInfoBean.getUpiId())
+				.upiAddress(upiPaymentInfoBean.getUpiAddress())
 				.amount(upiPaymentInfoBean.getAmount())
 				.payerTransactionId(upiPaymentInfoBean.getPayerTransactionId())
 				.payerTransactionTimestamp(Timestamp.valueOf(LocalDateTime.parse(upiPaymentInfoBean.getPayerTransactionTimestamp(), formatter)))
