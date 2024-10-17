@@ -24,8 +24,8 @@ public class UpiPaymentInfoEntity {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int upiNpclTransactionId;
 
-	@Column(name = "UPI_ID")
-	private String upiId;
+	@Column(name = "UPI_ADDRESS")
+	private String upiAddress;
 
 	@Column(name = "AMOUNT")
 	private float amount;
