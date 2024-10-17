@@ -10,7 +10,7 @@ import lombok.ToString;
 @Getter @Setter @Builder @NoArgsConstructor @AllArgsConstructor @ToString
 public class UpiPaymentInfoBean {
 	private int upiNpclTransactionId;
-	private String upiId;
+	private String upiAddress;
 	private float amount;
 	private int payerTransactionId;
 	private String payerTransactionTimestamp;
